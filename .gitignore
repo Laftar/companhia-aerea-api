@@ -1,0 +1,44 @@
+# Build / artefatos
+bin/
+obj/
+[Ll]ogs/
+*.log
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# Testes
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Temporários
+*.pdb
+*.cache
+*.tmp
+*.bak
+*.dbmdl
+*.jfm
+
+# Configs locais
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+local.settings.json
+
+# Front-end eventual
+node_modules/
+dist/

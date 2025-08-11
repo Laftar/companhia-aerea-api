@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Desafio001.Worker-e8895b06-9659-4e63-8117-90d7f04ac82d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Desafio001.Dominio\Desafio001.Dominio.csproj" />
+    <ProjectReference Include="..\Dominio\Desafio001.Servicos\Desafio001.Servico.csproj" />
+    <ProjectReference Include="..\Infra\Desafio001.Infra\Desafio001.Infra.csproj" />
+    <ProjectReference Include="..\Mensageria\Desafio001.Mensageria.csproj" />
+  </ItemGroup>
+</Project>

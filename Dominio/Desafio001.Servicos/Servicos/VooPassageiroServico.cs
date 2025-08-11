@@ -103,6 +103,7 @@ namespace Desafio001.Servico.Servicos
             passagem.Voo.CheckinPassageiro();
             var salvo = await vooPassageiroRep.AtualizarAsync(passagem, ct);
 
+            // Um comentario para teste
 
             if (true) //(salvo.Voo.QtdPassageirosPresentes >= salvo.Voo.Aviao.QtdMaxPassageiros)
             {
